@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="CORNELIUS">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500' rel='stylesheet' type='text/css'>
+        
+        <!-- ============ Bootstrap core CSS ============ -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- =============== Font Awesome =============== -->
+        <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+
+        <!-- =========== Magnific Popup CSS ============= -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <!-- ========== Animation Library CSS3 ========== -->
+        <link rel="stylesheet" href="css/animate.css">
+        
+        <!-- ============== Resource style ============== -->
+        <link rel="stylesheet" href="css/style-1.css">
+
+        <!-- Modernizr runs quickly on page load to detect features -->
+        <script async src="js/modernizr.js"></script>
+
+
+    </head>
+    <body>
+        
+
+        <div class="overlay-prevent"></div> <!-- Removed after a few second to prevent a hover too soon on the columns -->
+    
+        <div class="list-sections animated-middle">
+
+            <ul>
+
+                <li class="item-list"> <!-- 1 / .who part -->
+
+                    <!-- Link to open the popup -->
+                    <a href="#who-popup" class="open-popup-link">
+                
+                        <div class="item-title">
+                            <h2><i class="fa fa-user-secret"></i><br><span class="point">.W</span>ho?</h2>
+                            <p>About Us</p>
+                        </div> <!-- .item-title -->
+
+                        <div class="item-plus"><p>Toc Toc Toc!...</p><br><i class="fa fa-plus-circle fa-2x"></i></div>
+
+                    </a>
+
+                </li> <!-- .who part -->
+
+                <li class="item-list"> <!-- 2 / .when part -->
+
+                    <!-- Link to open the popup -->
+                    <a href="#when-popup" class="open-popup-link">
+                
+                        <div class="item-title">
+                            <h2><i class="fa fa-clock-o"></i><br><span class="point">.W</span>hen?</h2>
+                            <p>Coming Soon</p>
+                        </div> <!-- .item-title -->
+
+                        <div class="item-plus"><p>Join us on March2016...</p><br><i class="fa fa-plus-circle fa-2x"></i></div>
+
+                    </a>
+                
+                </li> <!-- .when part -->
+
+                <li class="item-list"> <!-- 3 / .where part -->
+
+                    <!-- Link to open the popup -->
+                    <a href="#where-popup" id="map-init" class="open-popup-link">
+                
+                        <div class="item-title">
+                            <h2><i class="fa fa-location-arrow"></i><br><span class="point">.W</span>here?</h2>
+                            <p>Locate Us</p>
+                        </div> <!-- .item-title -->
+
+                        <div class="item-plus"><p>Here, just at...</p><br><i class="fa fa-plus-circle fa-2x"></i></div>
+
+                    </a>
+
+                </li> <!-- .where part -->
+
+                <li class="item-list"> <!-- 4 / .why part -->
+
+                    <!-- Link to open the popup -->
+                    <a href="#why-popup" class="open-popup-link">
+                
+                        <div class="item-title">
+                            <h2><i class="fa fa-envelope-o"></i><br><span class="point">.W</span>hy?</h2>
+                            <p>Ask Us</p>
+                        </div> <!-- .item-title -->
+
+                        <div class="item-plus"><p>Get in touch ;-)</p><br><i class="fa fa-plus-circle fa-2x"></i></div>
+
+                    </a>
+
+                </li> <!-- .why part -->
+
+            </ul>           
+
+        </div> <!-- .list-sections -->
+
+        <nav id="nav-item" class="animated-middle opacity-0"> <!-- Navigation on top -->
+
+            <button type="button" class="mfp-close"><i class="fa fa-bars fa-2x"></i></button>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/5dosts?fref=ts"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/do_s_t"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.linkedin.com/company/dost?trk=nav_account_sub_nav_company_admin"><i class="fa fa-linkedin"></i></a>
+            </div><!-- .social-icons -->
+
+        </nav><!-- #nav-item -->
+
+        <!-- Who Section Content -->
+        <div id="who-popup" class="content-popup mfp-hide">
+            
+            <div class="background-top">
+                <div class="item-title">
+                    <h2><i class="fa fa-user-secret fa-4x"></i><br><span class="point">.DOST</span> is</h2>
+                    <p>DOST is a software management and development consultancy company which specializes in the role of developing distinctive solutions for enterprises to integrate multiple departments on a common platform. 
+
+Our areas of expertise include constructing custom made state of the art, enhanced and user friendly Enterprise Resource Planning. DOST is committed to delivering world-class value to its clients through innovation and thought leadership, and benchmark its professional approach, tools,  methodology, resources and team against international best practices. 
+
+We work closely with our clients on issues of strategic importance, develop be-spoke solutions and maintain long-term relationships for mutual learning and growth.
+.</p>
+                </div> <!-- .item-title -->
+
+                <button class="scroll-chevron"><i class="fa fa-chevron-down fa-2x"></i></button>
+
+            </div>
+            
+            <div class="info-item">
+
+                <div class="first-block">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2>DOSt.</h2>
+                            <h3>Dedicated One Stop Tech, a comprehensive process automation solution.</h3>
+                        </div>
+                    </div>
+                </div> <!-- .first-block -->
+
+                <div class="container info-block">
+
+                    <div class="col-xs-12 col-sm-12 col-lg-8">
+                        <h3><span class="point">DOSt</span> ERP Solutions<br></h3>
+                        <p>2015, April an idea came into being over not more than a hangout. Which further evolved into something not even thought of in the first place ending up making every one on the team more dedicated towards the brain child. The idea however is still in the evolution process, open for anyone's input which can you be. So, how about being a part of this adventure & ping us by a lot of options at hand like facebook, twitter, google+ and linkedin not only this, we also are providing you a mean of directly reaching us through email.  
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-lg-4">
+                        <img alt="" class="img-responsive img-right-about" src="<?php echo base_url();?>assets/img/about-picture.jpg" />
+                        <p class="on-right">Looking forward to make you a part of our adventure<br>Launching soon</p>
+                    </div>
+
+                </div> <!-- .info-block -->
+
+                <div class="second-block">
+
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2>Our Services.</h2>
+                            <h3>Be-spoke softwares solution for a vast array of business concerns.</h3>
+                        </div>
+                    </div>
+
+                </div> <!-- .second-block -->
+
+                <div class="container block-services">
+                    
+                    <div class="col-xs-12 col-sm-4 col-lg-4">
+
+                        <div class="item-service">
+                            <i class="fa fa-bullseye"></i>
+                            <h4>ADAPTIVE</h4>
+                            <span class="border-service"></span>
+                            <p>They say time is money and we believe in that slogan more than anyone. To help save precious and valuable time for our clients we have made our software as adaptive as possible. Through the intelligence of our software it is able to detect your favorite and daily actions and have it ready and only a click away. </p>
+                        </div>
+
+                    </div>
+                    
+
+                    <div class="col-xs-12 col-sm-4 col-lg-4">
+                    
+                        <div class="item-service">
+                            <i class="fa fa-cloud"></i>
+                            <h4>CLOUD BASED</h4>
+                            <span class="border-service"></span>
+                            <p>Another way our competitors are left in the dust when it comes to offering our clients exceptional services is due to the fact all our goods are all stored in a cloud based applications. Therefore, giving our clients much quicker access to information.</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-lg-4">
+                                                   <div class="item-service">
+                            <i class="fa fa-pencil"></i>
+                            <h4>Easliy Integratable</h4>
+                            <span class="border-service"></span>
+                            <p>As an executive spending time out of country for client meetings are a norm.  While on the business development trip the executive is able to summon any business report on their mobile app within an instant. Our product though self-sufficient at its core, is designed to provide optimum integration to allow smooth transfer of information.</p>
+                        </div>
+                        
+
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-4 col-lg-4">
+
+                        <div class="item-service">
+                            <i class="fa fa-paper-plane-o"></i>
+                            <h4>Cross Platform</h4>
+                            <span class="border-service"></span>
+                            <p>Whether you are a mac lover or a windows fanatic, either you are into the simplicity of apple or complex development of android; our products are free from any and all chains.  The need for incurring tremendous hardware costs to implement ERPs for your company is no more. Our products are able to work on all platforms from Linux to Mac and iPhones to Blackberries.</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-4 col-lg-4">
+
+                        <div class="item-service">
+                            <i class="fa fa-diamond"></i>
+                            <h4>ERP Solutions</h4>
+                            <span class="border-service"></span>
+                            <p>This truly is your dedicated one stop shop for all of your ERP needs. Into retailing? Great! We’ve got the most cutting edge state of the art CRM to boost your profitability and enhance your relationship with your clients and customers. Maybe retailing isn’t your thing and are into manufacturing. Better! We are able to produce a tailored made Supply Chain Management. System just for you to improve productivity and performance. No matter what the business is we’ve got a solution for you!</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-4 col-lg-4">
+
+                        <div class="item-service">
+                            <i class="fa fa-file-o"></i>
+                            <h4>Well documented</h4>
+                            <span class="border-service"></span>
+                            <p>We understand handling complexly integrated systems can be difficult and multifaceted. For our commitment to excellent client services we have dedicated software engineers for achieving well-formed and knowledge based documentation explaining step by step procedures for the software usage to help avoid any inconvenience for our clients.</p>
+                        </div>
+
+                    </div>
+
+                </div> <!-- .block-services -->
+
+                <div class="copyright col-md-12">
+
+                    <div class="text-center">
+                        <p>DOSt<br>© 2015 | All Rights Reserved</p>
+                    </div>
+                
+                </div> <!-- .copyright -->
+
+            </div> <!-- .info-item -->
+
+        </div> <!-- #who-popup -->
+
+        <!-- When Section Content -->
+        <div id="when-popup" class="content-popup mfp-hide">
+            
+            <div class="background-top">
+                <div class="item-title">
+                    <h2><i class="fa fa-clock-o fa-2x"></i><br><span class="point">March 2016.</span> </h2>
+                    <p>Be on a look out for March 2016 for our power packed one stop enterprise software solutions, capable of catering all your process automation needs. This ERP Santa has something for everyone.</p>
+                </div> <!-- .item-title -->
+
+                <button class="scroll-chevron"><i class="fa fa-chevron-down fa-2x"></i></button>
+
+            </div>
+
+            <div class="info-item">
+
+                <div class="first-block">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2>We are Coming Soon.</h2>
+                        </div>
+                    </div>
+                </div> <!-- .first-block -->
+
+                <div class="container countdown-block">
+
+                    <div class="col-md-4">
+                        <h3><span class="point"><i class="fa fa-clock-o"></i></span> Launching Informations<br><small>March, 2016</small></h3>
+                        <h4><i class="fa fa-bullhorn"></i> Join us on this journey.</h4>
+                        <p class="countdown-p">If you want to collaborate on crafting amazing experience for Businesses– your input is welcome.</p>
+                    </div>
+
+                    <div class="col-md-8">
+
+                        <div id="countdown_dashboard">
+                            
+                            <!-- Days / if you need only 2 figures for the day, delete the first line <div class="digit">0</div> -->
+                            <div class="col-xs-6 col-sm-3 col-lg-3 dash-glob">
+                                <div class="dash days_dash">
+                                    <div class="digit">0</div>
+                                    <div class="digit">0</div>
+                                    <div class="digit">0</div>
+                                    <span class="dash_title">Days</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Hours -->
+                            <div class="col-xs-6 col-sm-3 col-lg-3 dash-glob">
+                                <div class="dash hours_dash">
+                                    <div class="digit">0</div>
+                                    <div class="digit">0</div>
+                                    <span class="dash_title">Hours</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Minutes -->
+                            <div class="col-xs-6 col-sm-3 col-lg-3 dash-glob">
+                                <div class="dash minutes_dash">
+                                    <div class="digit">0</div>
+                                    <div class="digit">0</div>
+                                    <span class="dash_title">Minutes</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Seconds -->
+                            <div class="col-xs-6 col-sm-3 col-lg-3 dash-glob">
+                                <div class="dash seconds_dash">
+                                    <div class="digit">0</div>
+                                    <div class="digit">0</div>
+                                    <span class="dash_title">Seconds</span>
+                                </div>
+                            </div>
+
+                        </div> <!-- .countdown_dashboard -->
+
+                    </div>
+
+                </div> <!-- .countdown-block -->
+
+                <div class="newsletter-block">
+                
+                    <div class="col-xs-12 col-sm-12 col-lg-5 block-left-newsletter">
+                        <i class="fa fa-bell"></i>
+                    </div> <!-- .block-left-newsletter -->
+
+                    <div class="col-xs-12 col-sm-12 col-lg-7 block-right-newsletter">
+                        
+                        <div id="subscribe">
+
+                            <h2>Stay Tunned!!*</h2>
+                            <p>Subscribe to learn more about our progress.</p>
+                            <p>Your curiousity is appreciated<strong>, Subscribe now!</strong></p>
+       
+                            <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+                                <div class="form-group">
+                                    <div class="controls">
+                                        <input type="text" id="mail-sub" name="email" placeholder="Write your email and stay tuned!" class="form-control email srequiredField">
+                                        <button class="btn btn-lg submit">Subscribe</button>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                        </div> <!-- .subscribe -->
+
+                    </div> <!-- .block-right-newsletter -->
+
+                    <div class="clear"></div>
+
+                    <div class="legal-info col-md-12">
+
+                        <div class="text-center">
+                            <p>* Your e-mail will be used only for this alert.</p>
+                        </div>
+                
+                    </div> <!-- .legal-info -->
+
+                </div> <!-- .newsletter-block -->
+
+            </div> <!-- .info-item -->
+
+        </div> <!-- #when-popup --> 
+
+        <!-- Where Section Content -->
+        <div id="where-popup" class="content-popup mfp-hide">
+            
+            <div class="background-top">
+                <div class="item-title">
+                    <h2><i class="fa fa-location-arrow fa-2x"></i><br><span class="point">Pakistan</span>, Lahore.</h2>
+                    <p>Coming from the land filled with finest natural resources, biggest coal mine, one of the largest exporters of textile and leather, host to the manmade wonder of Karakorum Highway and home of some of the mightiest mountain ranges, Pakistan. Emerging industry leaders in global market of IT.</p>
+                </div> <!-- .item-title -->
+
+                <button class="scroll-chevron"><i class="fa fa-chevron-down fa-2x"></i></button>
+
+            </div>
+
+
+            <div class="info-item">
+                    
+                <div class="first-block">
+                    <div class="container container-wide">
+                        <div class="col-md-12">
+                            <h2>Locate Us.</h2>
+                            <h3>Center Point Plaza - Lahore, Pakistan</h3>
+                        </div>
+                    </div>
+                </div> <!-- .first-block -->
+
+                <div class="locate-block">
+                    
+                    <div class="col-xs-12 col-sm-12 col-lg-12 place-info">
+
+                        <img alt="" class="img-responsive logo-where" src="<?php echo base_url(); ?>assets/img/logo-demo.jpg" />
+
+                        <h3><span class="point">DOSt;IS</span></h3>
+                        <p>Located in the midst of commercial Hub, easily accessible and available waiting for you to drop by at any time for consultations, queries or quotes.</p>
+                        <!-- p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p -->
+
+                        <span class="border"></span>
+
+                        <!-- div class="col-md-12 no-padding">
+                            <div class="col-xs-12 col-sm-12 col-lg-5 location-bottom">
+                                <h5><i class="fa fa-plane"></i> Airport office SAS</h5>
+                                <p class="color-info">Bondi Beach / Melbourne St<br>
+                                South Brisbane QLD 4101</p>
+                            </div>
+                            <div class="col-xs-12 col-xs-push-0 col-sm-12 col-sm-push-0 col-lg-5 col-lg-push-1 location-bottom">
+                                <h5><i class="fa fa-bed"></i> La Clé des Champs</h5>
+                                <p class="color-info">Plage Ouest / Rue de Mantoue<br>
+                                Centre-ville de Reims, 51100</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 no-padding">
+                            <div class="col-xs-12 col-sm-12 col-lg-5 location-bottom">
+                                <h5><i class="fa fa-university"></i> HWS Bank</h5>
+                                <p class="color-info">Bockenheimer Landstraße 2-4<br>
+                                D-60306 Frankfurt am Main</p>
+                            </div>
+                            <div class="col-xs-12 col-xs-push-0 col-sm-12 col-sm-push-0 col-lg-5 col-lg-push-1 location-bottom">
+                                <h5><i class="fa fa-car"></i> Western Garage</h5>
+                                <p class="color-info">6605 NW 7th St<br>
+                                Miami, FL 33126, United States</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 no-padding">
+                            <div class="col-xs-12 col-sm-12 col-lg-5 location-bottom">
+                                <h5><i class="fa fa-subway"></i> 新宿御苑</h5>
+                                <p class="color-info">11 Naitomachi<br>
+                                Shinjuku, Tokyo 160-0014</p>
+                            </div>
+                        </div>
+
+                    </div> <!-- .place-info -->
+
+                    <!-- div class="col-xs-12 col-sm-12 col-lg-6 no-padding"> 
+
+                        <div id="map"></div>
+
+                    </div -->
+
+                    <div class="clear"></div>
+                
+                </div> <!-- .locate-block -->
+
+            </div> <!-- .info-item -->
+
+        </div> <!-- #where-popup --> 
+
+        <!-- Why Section Content -->
+        <div id="why-popup" class="content-popup mfp-hide">
+            
+            <div class="background-top">
+                <div class="item-title">
+                    <h2><i class="fa fa-envelope-o fa-2x"></i><br><span class="point">Keep</span> in touch!</h2>
+                    <p>Either curious or liking us already!! 
+                        If you have a question or would like to learn more about our evil plans, write to us. 
+                        Your questions or comments mean a lot. 
+                    </p>
+                </div> <!-- .item-title -->
+
+                <button class="scroll-chevron"><i class="fa fa-chevron-down fa-2x"></i></button>
+
+            </div>
+
+            <div class="info-item">
+                    
+                <div class="first-block">
+                    <div class="container container-wide spec-sm">
+                        <div class="col-md-12">
+                            <h2>Ask Us.<br><small>Some methods &amp; Contact form</small></h2>
+                        </div>
+                    </div>
+                </div> <!-- .first-block -->
+
+                <div class="contact-block">
+
+                    <div class="col-xs-12 col-sm-12 col-lg-5 info-solutions">
+                    
+                        <!-- h3><span class="point"><i class="fa fa-bookmark"></i></span> Contact Informations<br><small>E-mail, Phone</small></h3>
+                        <!-- p class="contact-p">Opening Hours : 9.00 - 18.00<br>Monday <i class="fa fa-arrow-right"></i> Saturday</p -->
+
+                        <span class="border-light"></span>
+
+                        <!--div class="col-xs-12 col-sm-12 col-lg-12 contact-solution no-padding">
+                            <h4><i class="fa fa-envelope-o"></i> Postal Address</h4>
+                            <p>PO Box 16122 Collins Street West<br>
+                                Victoria 8007 Australia</p>
+                        </div -->
+
+                        <div class="col-xs-12 col-sm-12 col-lg-12 contact-solution no-padding">
+                            <h4><i class="fa fa-paper-plane-o"></i> E-mail</h4>
+                            <p>Webmaster : <a href="mailto:info@dostecnologies.com">info@dostechnologies.com</a></p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-lg-12 contact-solution no-padding">
+                            <h4><i class="fa fa-phone"></i> Phone</h4>
+                            <p>Asad Khan : <a href="tel:+6678764543">+92 331 418 9996</a><br>
+                                Faizan Bashir : <a href="tel:+3354737263">+92 321 444 1015</a></p>
+                        </div>
+                        <!-- div class="col-xs-12 col-sm-12 col-lg-12 contact-solution no-padding">
+                            <h4><i class="fa fa-keyboard-o"></i> FAX</h4>
+                            <p>Main Line : 0-987-998-675</p>
+                        </div -->
+                    
+                    </div> <!-- .info-solutions -->
+
+                    <div class="col-xs-12 col-sm-12 col-lg-7 contact-part">
+                    
+                        <h3>
+                            <span class="point-gold"><i class="fa fa-bookmark"></i></span> Say Hello!<br>
+                            <small>Response in less than 24Hrs.</small>
+                        </h3>
+
+                        <p class="contact-p-right">If you want to collaborate on crafting amazing experience for people, you are very welcome to contact our group. 
+                        We are available for freelance projects too.<br>
+                        Just use the form below!</p>
+
+                        <!-- Contact form -->
+                        <form id="contact-form1" name="contact-form" method="POST" action = "<?php echo base_url(); ?>Main/send_email" >
+
+                            <!-- Full name -->
+                            <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form form-control" placeholder="Write your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write your name'" name="name" data-name="Name" required>
+                                </div>
+                            </div>
+
+                            <!-- E-mail -->
+                            <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form form-control" placeholder="Write your email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write your email address'" name="email" data-name="Email Address" required>
+                                </div>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+                                <div class="form-group">
+                                    <input type="text" id="subject" class="form form-control" placeholder="Write the subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write the subject'" name="subject" data-name="Subject">
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+                                <div class="form-group">
+                                    <textarea id="text-area" class="form textarea form-control" placeholder="Your message here... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here... 20 characters Min.'" name="message" data-name="Text Area" required></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Button submit -->
+                            <button type="submit" id="valid-form" class="btn btn-large">Send my Message</button>
+            
+                        </form>
+                        <!-- /. Contact form -->
+                        
+                        <div id="answer"></div>
+
+                    </div> <!-- .contact-part -->
+
+                    <div class="clear"></div>
+
+                </div> <!-- .contact-block -->
+
+            </div> <!-- .info-item -->
+
+        </div> <!-- #why-popup --> 
+
+        <!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+        <!-- ********** Resources jQuery ********** -->
+        <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+
+        <!-- * Libraries jQuery and Bootstrap - Be careful to not remove them * -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
+        
+        <!-- Countdown -->
+        <script src="js/jquery.lwtCountdown-1.0.js"></script>
+
+        <!-- Google Maps API -->
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+        <!-- Magnific Popup core JS file -->
+        <script src="js/jquery.magnific-popup.js"></script>
+
+        <!-- Newsletter -->
+        <script src="js/notifyMe.js"></script>
+
+        <!-- Contact form verification -->
+        <script src="js/contact-me.js"></script>
+
+        <!-- Main Js -->
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

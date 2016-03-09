@@ -1,0 +1,432 @@
+/*
+* W&W - Futuristic Coming Soon Template
+* Build Date: March 2015
+* Author: Madeon08
+* Copyright (C) 2015 Madeon08
+* This is a premium product available exclusively on http://themeforest.net
+*/
+/*  TABLE OF CONTENTS
+    ---------------------------
+     (@Import only for SASS) & Reset
+     1. Basic style
+     2. Core & Components
+     3. Generic Design
+     4. Informations Section
+     5. Media Queries
+*/
+/*
+* http://meyerweb.com/eric/tools/css/reset/ 
+* v2.0 | 20110126
+* License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------- */
+/* 1. Basic style ...................... */
+/* ------------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: Ubuntu, "Helvetica Neue", "Lucida Grande", Arial, Verdana, sans-serif;
+  color: #FFFFFF;
+  background-color: #1C202B;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body a {
+  color: #F1E7C0;
+  text-decoration: none;
+}
+body a:hover, body a:active, body a:focus {
+  outline: none !important;
+  text-decoration: none !important;
+  color: #F1E7C0;
+}
+
+button {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button:hover, button:active, button:focus {
+  outline: none !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-pad-top {
+  padding-top: 0;
+}
+
+.no-pad-right {
+  padding-right: 0;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.display-none {
+  display: none;
+}
+
+/* ------------------------------------- */
+/* 2. Core & Components ................ */
+/* ------------------------------------- */
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: #2B2D35;
+}
+.loading p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50vh;
+}
+
+.info-item {
+  height: 120vh;
+  clear: both;
+  visibility: visible;
+  opacity: 1;
+  padding: 0;
+  cursor: auto;
+  background-color: #1C202B;
+  color: #F5F6F7;
+}
+.info-item h3 {
+  color: #FFFFFF;
+  margin: 0 auto;
+  line-height: 1;
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+.info-item h3 small {
+  color: #BABABA;
+}
+.info-item p {
+  color: #F5F6F7;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.email-us {
+  display: block;
+  z-index: 1;
+  border: none;
+  background: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: -webkit-transform 1s 0s, visibility 0s 1s;
+  -moz-transition: -moz-transform 1s 0s, visibility 0s 1s;
+  transition: transform 1s 0s, visibility 0s 1s;
+}
+.email-us:hover, .email-us:focus, .email-us:active {
+  text-decoration: none;
+  outline: none;
+}
+
+#nav-item {
+  width: 100%;
+  z-index: 9999;
+  background: #2B2D35;
+  top: 0;
+  left: 0;
+  font-size: 0.7em;
+  font-weight: 300;
+  color: #FFFFFF;
+  display: block;
+  height: 6em;
+  overflow: hidden;
+  text-indent: 0;
+  white-space: nowrap;
+}
+#nav-item .social-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+  width: auto;
+  height: 6em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#nav-item .social-icons a {
+  color: rgba(255, 255, 255, 0.7);
+  width: 6em;
+  line-height: 5em;
+  letter-spacing: 0;
+  background: #2B2D35;
+  font-size: 1.2em;
+  font-weight: 300;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  border: none;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+}
+#nav-item .social-icons a:hover {
+  color: #2B2D35;
+  background: #FFFFFF;
+}
+#nav-item .email-us {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 0 2em;
+  line-height: 100vh;
+  background: #2B2D35;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.5em;
+  text-indent: 0;
+  width: auto;
+  height: 100%;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.58, 1);
+}
+#nav-item .email-us:hover {
+  color: #2B2D35;
+  background: #FFFFFF;
+}
+
+/* ------------------------------------- */
+/* 3. Generic Design ................... */
+/* ------------------------------------- */
+.info-item h3 span.point {
+  color: #FF1D4D;
+}
+
+.countdown-block h4 {
+  font-size: 1.4em;
+  margin-bottom: 0.4em;
+}
+
+/* ------------------------------------- */
+/* 4. Informations Section ............. */
+/* ------------------------------------- */
+.countdown-block {
+  padding: 9em 0;
+}
+.countdown-block .text-on-left {
+  padding-left: 5em;
+}
+.countdown-block .logo-home {
+  max-width: 70%;
+  margin-bottom: 3em;
+}
+.countdown-block p.countdown-p {
+  font-style: italic;
+  font-size: 0.8em;
+}
+.countdown-block #countdown_dashboard {
+  display: block;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.countdown-block #countdown_dashboard .dash-glob {
+  border-left: 1px solid #2B2D35;
+  text-align: center;
+}
+.countdown-block #countdown_dashboard .dash-glob:first-child {
+  margin-left: 0;
+  border-left: none;
+}
+.countdown-block #countdown_dashboard .dash-glob .dash {
+  padding-bottom: 10px;
+  position: relative;
+  opacity: 1;
+}
+.countdown-block #countdown_dashboard .dash-glob .dash .digit {
+  color: #F5F6F7;
+  font-size: 14em;
+  font-weight: 500;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  height: 1.5em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+}
+.countdown-block #countdown_dashboard .dash-glob .dash .dash_title {
+  clear: both;
+  color: #999999;
+  display: block;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  width: 100%;
+}
+
+/* ------------------------------------- */
+/* 5. Media Queries .................... */
+/* ------------------------------------- */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  #nav-item {
+    background: #1c202b;
+  }
+  #nav-item .social-icons a {
+    color: #FFFFFF;
+    width: 4em;
+    background: transparent;
+  }
+  #nav-item .social-icons a:hover {
+    color: #FFFFFF;
+    background: transparent;
+  }
+  #nav-item .email-us {
+    color: #FFFFFF;
+    background: transparent;
+    line-height: 6em;
+  }
+  #nav-item .email-us:hover {
+    color: #FFFFFF;
+    background: transparent;
+  }
+
+  .countdown-block {
+    padding: 5em 0em;
+    margin: 0 auto;
+  }
+  .countdown-block .text-on-left {
+    padding-left: 45px;
+  }
+  .countdown-block #countdown_dashboard {
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+  .countdown-block #countdown_dashboard .dash-glob {
+    text-align: left;
+  }
+  .countdown-block #countdown_dashboard .dash-glob .dash .digit {
+    line-height: 1em;
+    height: 1em;
+  }
+  .countdown-block #countdown_dashboard .dash-glob .dash .dash_title {
+    padding-left: 2em;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .countdown-block {
+    padding: 5em 1em 3em;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .countdown-block #countdown_dashboard {
+    margin-top: 3em;
+    margin-bottom: 1em;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .countdown-block {
+    padding: 5em 0em;
+    margin: 0 auto;
+  }
+  .countdown-block .text-on-left {
+    padding-left: 45px;
+  }
+  .countdown-block #countdown_dashboard {
+    margin-top: 3em;
+    margin-bottom: 2em;
+  }
+  .countdown-block #countdown_dashboard .dash-glob {
+    text-align: left;
+  }
+  .countdown-block #countdown_dashboard .dash-glob .dash .digit {
+    line-height: 1em;
+    height: 1em;
+    font-size: 8em;
+  }
+  .countdown-block #countdown_dashboard .dash-glob .dash .dash_title {
+    padding-top: 0.8em;
+    padding-left: 0;
+  }
+}
